@@ -4,7 +4,6 @@ An end-to-end data analysis project answering 18 real-world business questions a
 
 ![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?logo=tableau&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Data%20Loading-3776AB?logo=python&logoColor=white)
 ![Excel](https://img.shields.io/badge/Excel-Data%20Exploration-217346?logo=microsoftexcel&logoColor=white)
 
 ---
@@ -134,5 +133,5 @@ https://public.tableau.com/app/profile/shivani.sivaprakasam/viz/Book_Dashboard6/
 
 ```
 
-**Author:** Shivani
-**Background:** B.Tech Biotechnology graduate transitioning into Data Analytics
+Author: Shivani
+Background: B.Tech Biotechnology graduate transitioning into Data Analytics
