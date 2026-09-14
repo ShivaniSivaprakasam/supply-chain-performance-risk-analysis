@@ -1,0 +1,1154 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='692768b0fb84bb8421098d300e1a57ac7fa908ece703164ff8f502a822151011' _.fcp.WorkbookFingerprinting.true...creator-author-id='692768b0fb84bb8421098d300e1a57ac7fa908ece703164ff8f502a822151011' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='7d7ea57927f27b79cb58f64925b04a792735071f882584e776f1aed4c65dfc38' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='7d7ea57927f27b79cb58f64925b04a792735071f882584e776f1aed4c65dfc38' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location id='Question1_17888570530580' path='/workbooks' revision='1.6' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Question_1' inline='true' name='federated.0cpfhw00ko63ws1g2njpg11619nl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Question_1' name='textscan.1g0z4zw1dnso2m185wec91lx81cm'>
+            <connection class='textscan' directory='D:/Project/Data Analysis/Visualization Project/Delivery Performance &amp; Logistics' filename='Question_1.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1g0z4zw1dnso2m185wec91lx81cm' name='Question_1.csv' table='[Question_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='shipping_mode' ordinal='0' />
+            <column datatype='integer' name='total_orders' ordinal='1' />
+            <column datatype='integer' name='late_orders' ordinal='2' />
+            <column datatype='real' name='late_delivery_pct' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Question_1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shipping_mode]</local-name>
+            <parent-name>[Question_1.csv]</parent-name>
+            <remote-alias>shipping_mode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Question_1.csv_48A361F14C6145C39A8CC118D1443992]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_orders]</local-name>
+            <parent-name>[Question_1.csv]</parent-name>
+            <remote-alias>total_orders</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_1.csv_48A361F14C6145C39A8CC118D1443992]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[late_orders]</local-name>
+            <parent-name>[Question_1.csv]</parent-name>
+            <remote-alias>late_orders</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_1.csv_48A361F14C6145C39A8CC118D1443992]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_delivery_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_delivery_pct]</local-name>
+            <parent-name>[Question_1.csv]</parent-name>
+            <remote-alias>late_delivery_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_1.csv_48A361F14C6145C39A8CC118D1443992]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Risk Flag' datatype='string' name='[Calculation_0682565401251840]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [late_delivery_pct] &gt;= 50 THEN &quot;High Risk (≥50%)&quot;&#13;&#10;ELSE &quot;Lower Risk (&lt;50%)&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Question_1.csv' datatype='table' name='[__tableau_internal_object_id__].[Question_1.csv_48A361F14C6145C39A8CC118D1443992]' role='measure' type='quantitative' />
+      <column caption='Late Delivery Pct' datatype='real' name='[late_delivery_pct]' role='measure' type='quantitative' />
+      <column caption='Late Orders' datatype='integer' name='[late_orders]' role='measure' type='quantitative' />
+      <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+      <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_0682565401251840]' derivation='None' name='[none:Calculation_0682565401251840:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Shivani/AppData/Local/Temp/TableauTemp/#TableauTemp_1j5pn1o0vb4w3h11gk3x618mr9kx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/10/2026 05:46:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>shipping_mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shipping_mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_mode</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Question_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_orders</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Question_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_orders</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Question_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_delivery_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[late_delivery_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_delivery_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Question_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_0682565401251840:nk]' type='palette'>
+            <map to='#4a6fa5'>
+              <bucket>&quot;Lower Risk (&lt;50\%)&quot;</bucket>
+            </map>
+            <map to='#c0392b'>
+              <bucket>&quot;High Risk (≥50\%)&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Question_1.csv' id='Question_1.csv_48A361F14C6145C39A8CC118D1443992'>
+            <properties context=''>
+              <relation connection='textscan.1g0z4zw1dnso2m185wec91lx81cm' name='Question_1.csv' table='[Question_1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='shipping_mode' ordinal='0' />
+                  <column datatype='integer' name='total_orders' ordinal='1' />
+                  <column datatype='integer' name='late_orders' ordinal='2' />
+                  <column datatype='real' name='late_delivery_pct' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Question_2(Regional)' inline='true' name='federated.0t2ihku16x7vpt1d4hx9v10anolt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Question_2(Regional)' name='textscan.0y7ruuk00gpkxu19krtvl0n3y48m'>
+            <connection class='textscan' directory='D:/Project/Data Analysis/Visualization Project/Delivery Performance &amp; Logistics' filename='Question_2(Regional).csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0y7ruuk00gpkxu19krtvl0n3y48m' name='Question_2(Regional).csv' table='[Question_2(Regional)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='market' ordinal='0' />
+            <column datatype='string' name='order_region' ordinal='1' />
+            <column datatype='integer' name='total_orders' ordinal='2' />
+            <column datatype='integer' name='late_orders' ordinal='3' />
+            <column datatype='real' name='late_delivery_pct' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Question_2(Regional).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[market]</local-name>
+            <parent-name>[Question_2(Regional).csv]</parent-name>
+            <remote-alias>market</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[order_region]</local-name>
+            <parent-name>[Question_2(Regional).csv]</parent-name>
+            <remote-alias>order_region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_orders]</local-name>
+            <parent-name>[Question_2(Regional).csv]</parent-name>
+            <remote-alias>total_orders</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[late_orders]</local-name>
+            <parent-name>[Question_2(Regional).csv]</parent-name>
+            <remote-alias>late_orders</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>late_delivery_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_delivery_pct]</local-name>
+            <parent-name>[Question_2(Regional).csv]</parent-name>
+            <remote-alias>late_delivery_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Late Delivery Rate %' datatype='real' name='[Calculation_0682565410324481]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([late_orders]) / SUM([total_orders])' />
+      </column>
+      <column caption='Question_2(Regional).csv' datatype='table' name='[__tableau_internal_object_id__].[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]' role='measure' type='quantitative' />
+      <column caption='Late Delivery Pct' datatype='real' name='[late_delivery_pct]' role='measure' type='quantitative' />
+      <column caption='Late Orders' datatype='integer' name='[late_orders]' role='measure' type='quantitative' />
+      <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+      <column caption='Order Region' datatype='string' name='[order_region]' role='dimension' type='nominal' />
+      <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Shivani/AppData/Local/Temp/TableauTemp/#TableauTemp_1y3jq1g1gsk5g614puugu0jipblv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/10/2026 06:23:46 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>market</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[market]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Question_2(Regional).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[order_region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_region</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Question_2(Regional).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_orders</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Question_2(Regional).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[late_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_orders</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Question_2(Regional).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>late_delivery_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[late_delivery_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_delivery_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Question_2(Regional).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Question_2(Regional).csv' id='Question_2(Regional).csv_81B7351490014DEEBC6373898280DAF5'>
+            <properties context=''>
+              <relation connection='textscan.0y7ruuk00gpkxu19krtvl0n3y48m' name='Question_2(Regional).csv' table='[Question_2(Regional)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='market' ordinal='0' />
+                  <column datatype='string' name='order_region' ordinal='1' />
+                  <column datatype='integer' name='total_orders' ordinal='2' />
+                  <column datatype='integer' name='late_orders' ordinal='3' />
+                  <column datatype='real' name='late_delivery_pct' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Question_3' inline='true' name='federated.15bbtsk01xp60z182pf7k09e4mea' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Question_3' name='textscan.1wttt391f4beaq1gum7421quy5w3'>
+            <connection class='textscan' directory='D:/Project/Data Analysis/Visualization Project/Delivery Performance &amp; Logistics' filename='Question_3.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wttt391f4beaq1gum7421quy5w3' name='Question_3.csv' table='[Question_3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='shipping_mode' ordinal='0' />
+            <column datatype='real' name='avg_scheduled_days' ordinal='1' />
+            <column datatype='real' name='avg_actual_days' ordinal='2' />
+            <column datatype='real' name='avg_gap_days' ordinal='3' />
+            <column datatype='real' name='gap_stddev' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Question_3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shipping_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[shipping_mode]</local-name>
+            <parent-name>[Question_3.csv]</parent-name>
+            <remote-alias>shipping_mode</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_scheduled_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_scheduled_days]</local-name>
+            <parent-name>[Question_3.csv]</parent-name>
+            <remote-alias>avg_scheduled_days</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_actual_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_actual_days]</local-name>
+            <parent-name>[Question_3.csv]</parent-name>
+            <remote-alias>avg_actual_days</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_gap_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_gap_days]</local-name>
+            <parent-name>[Question_3.csv]</parent-name>
+            <remote-alias>avg_gap_days</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gap_stddev</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gap_stddev]</local-name>
+            <parent-name>[Question_3.csv]</parent-name>
+            <remote-alias>gap_stddev</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Delivery Promise Status' datatype='string' name='[Calculation_0682565411614722]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [avg_gap_days] &gt; 0 THEN &quot;Missed Promise&quot;&#13;&#10;ELSE &quot;Met or Beat Promise&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Question_3.csv' datatype='table' name='[__tableau_internal_object_id__].[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]' role='measure' type='quantitative' />
+      <column caption='Avg Actual Days' datatype='real' name='[avg_actual_days]' role='measure' type='quantitative' />
+      <column caption='Avg Gap Days' datatype='real' name='[avg_gap_days]' role='measure' type='quantitative' />
+      <column caption='Avg Scheduled Days' datatype='real' name='[avg_scheduled_days]' role='measure' type='quantitative' />
+      <column caption='Gap Stddev' datatype='real' name='[gap_stddev]' role='measure' type='quantitative' />
+      <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_0682565411614722]' derivation='None' name='[none:Calculation_0682565411614722:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Shivani/AppData/Local/Temp/TableauTemp/#TableauTemp_1t6r0bt0cv04ik1esy5r5021ezia.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/10/2026 06:28:59 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>shipping_mode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[shipping_mode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>shipping_mode</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Question_3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_scheduled_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_scheduled_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_scheduled_days</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Question_3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_actual_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_actual_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_actual_days</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Question_3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_gap_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_gap_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_gap_days</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Question_3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gap_stddev</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gap_stddev]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gap_stddev</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Question_3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Question_3.csv_168E98F5808E4046BDF5BF61CE49946F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_0682565411614722:nk]' type='palette'>
+            <map to='#117a65'>
+              <bucket>&quot;Met or Beat Promise&quot;</bucket>
+            </map>
+            <map to='#d35400'>
+              <bucket>&quot;Missed Promise&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Question_3.csv' id='Question_3.csv_168E98F5808E4046BDF5BF61CE49946F'>
+            <properties context=''>
+              <relation connection='textscan.1wttt391f4beaq1gum7421quy5w3' name='Question_3.csv' table='[Question_3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='shipping_mode' ordinal='0' />
+                  <column datatype='real' name='avg_scheduled_days' ordinal='1' />
+                  <column datatype='real' name='avg_actual_days' ordinal='2' />
+                  <column datatype='real' name='avg_gap_days' ordinal='3' />
+                  <column datatype='real' name='gap_stddev' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Late Delivery % by Shipping Mode'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Which Shipping Mode Has the Highest Late Delivery Rate?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Question_1' name='federated.0cpfhw00ko63ws1g2njpg11619nl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cpfhw00ko63ws1g2njpg11619nl'>
+            <column caption='Risk Flag' datatype='string' name='[Calculation_0682565401251840]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [late_delivery_pct] &gt;= 50 THEN &quot;High Risk (≥50%)&quot;&#13;&#10;ELSE &quot;Lower Risk (&lt;50%)&quot;&#13;&#10;END' />
+            </column>
+            <column-instance column='[shipping_mode]' derivation='Attribute' name='[attr:shipping_mode:nk]' pivot='key' type='nominal' />
+            <column caption='Late Delivery Pct' datatype='real' name='[late_delivery_pct]' role='measure' type='quantitative' />
+            <column caption='Late Orders' datatype='integer' name='[late_orders]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0682565401251840]' derivation='None' name='[none:Calculation_0682565401251840:nk]' pivot='key' type='nominal' />
+            <column-instance column='[shipping_mode]' derivation='None' name='[none:shipping_mode:nk]' pivot='key' type='nominal' />
+            <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+            <column-instance column='[late_delivery_pct]' derivation='Sum' name='[sum:late_delivery_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[late_orders]' derivation='Sum' name='[sum:late_orders:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_orders]' derivation='Sum' name='[sum:total_orders:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:shipping_mode:nk]' direction='DESC' using='[federated.0cpfhw00ko63ws1g2njpg11619nl].[sum:late_delivery_pct:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:shipping_mode:nk]' value='154' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:shipping_mode:nk]' value='200' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:Calculation_0682565401251840:nk]' />
+              <tooltip column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[attr:shipping_mode:nk]' />
+              <tooltip column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[sum:total_orders:qk]' />
+              <tooltip column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[sum:late_orders:qk]' />
+              <tooltip column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[sum:late_delivery_pct:qk]' />
+              <text column='[federated.0cpfhw00ko63ws1g2njpg11619nl].[sum:late_delivery_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:shipping_mode:nk]</rows>
+        <cols>[federated.0cpfhw00ko63ws1g2njpg11619nl].[sum:late_delivery_pct:qk]</cols>
+      </table>
+      <simple-id uuid='{65CE56EB-B03D-4620-B849-560E452C2D6C}' />
+    </worksheet>
+    <worksheet name='Late Delivery Rate by Market and Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Where Are Late Deliveries Concentrated — Carrier Issue or Geography Issue?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Question_2(Regional)' name='federated.0t2ihku16x7vpt1d4hx9v10anolt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0t2ihku16x7vpt1d4hx9v10anolt'>
+            <column caption='Late Delivery Rate %' datatype='real' name='[Calculation_0682565410324481]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([late_orders]) / SUM([total_orders])' />
+            </column>
+            <column-instance column='[market]' derivation='Attribute' name='[attr:market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[order_region]' derivation='Attribute' name='[attr:order_region:nk]' pivot='key' type='nominal' />
+            <column caption='Late Orders' datatype='integer' name='[late_orders]' role='measure' type='quantitative' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Order Region' datatype='string' name='[order_region]' role='dimension' type='nominal' />
+            <column-instance column='[total_orders]' derivation='Sum' name='[sum:total_orders:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Orders' datatype='integer' name='[total_orders]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0682565410324481]' derivation='User' name='[usr:Calculation_0682565410324481:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[usr:Calculation_0682565410324481:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6dee6</color>
+                <color>#bdccdb</color>
+                <color>#a5bbd0</color>
+                <color>#8faac5</color>
+                <color>#7a9aba</color>
+                <color>#678baf</color>
+                <color>#567da4</color>
+                <color>#456f99</color>
+                <color>#37638e</color>
+                <color>#2a5783</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[usr:Calculation_0682565410324481:qk]' />
+              <size column='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[sum:total_orders:qk]' />
+              <lod column='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[none:market:nk]' />
+              <tooltip column='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[attr:market:nk]' />
+              <tooltip column='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[attr:order_region:nk]' />
+              <tooltip column='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[usr:Calculation_0682565410324481:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3B53EFE9-423E-4709-A333-96958BA3D19C}' />
+    </worksheet>
+    <worksheet name='Shipping Mode: Promised vs Actual Delivery Days'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Are We Meeting Our Shipping Promises?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Question_3' name='federated.15bbtsk01xp60z182pf7k09e4mea' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15bbtsk01xp60z182pf7k09e4mea'>
+            <column caption='Delivery Promise Status' datatype='string' name='[Calculation_0682565411614722]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [avg_gap_days] &gt; 0 THEN &quot;Missed Promise&quot;&#13;&#10;ELSE &quot;Met or Beat Promise&quot;&#13;&#10;END' />
+            </column>
+            <column caption='Avg Actual Days' datatype='real' name='[avg_actual_days]' role='measure' type='quantitative' />
+            <column caption='Avg Gap Days' datatype='real' name='[avg_gap_days]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0682565411614722]' derivation='None' name='[none:Calculation_0682565411614722:nk]' pivot='key' type='nominal' />
+            <column-instance column='[shipping_mode]' derivation='None' name='[none:shipping_mode:nk]' pivot='key' type='nominal' />
+            <column caption='Shipping Mode' datatype='string' name='[shipping_mode]' role='dimension' type='nominal' />
+            <column-instance column='[avg_actual_days]' derivation='Sum' name='[sum:avg_actual_days:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.15bbtsk01xp60z182pf7k09e4mea].[none:shipping_mode:nk]' value='151' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.15bbtsk01xp60z182pf7k09e4mea].[none:shipping_mode:nk]' value='212' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#7f8c8d4b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15bbtsk01xp60z182pf7k09e4mea].[none:Calculation_0682565411614722:nk]' />
+              <text column='[federated.15bbtsk01xp60z182pf7k09e4mea].[sum:avg_actual_days:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.15bbtsk01xp60z182pf7k09e4mea].[sum:avg_actual_days:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' value-column='[federated.15bbtsk01xp60z182pf7k09e4mea].[sum:avg_actual_days:qk]' z-order='1' />
+            <reference-line axis-column='[federated.15bbtsk01xp60z182pf7k09e4mea].[sum:avg_actual_days:qk]' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' value-column='[federated.15bbtsk01xp60z182pf7k09e4mea].[sum:avg_actual_days:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15bbtsk01xp60z182pf7k09e4mea].[none:shipping_mode:nk]</rows>
+        <cols>[federated.15bbtsk01xp60z182pf7k09e4mea].[sum:avg_actual_days:qk]</cols>
+      </table>
+      <simple-id uuid='{7DFB599C-5468-4310-9C48-7193A31454D5}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='89'>
+    <window class='worksheet' maximized='true' name='Late Delivery % by Shipping Mode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:Calculation_0682565401251840:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:Calculation_0682565401251840:nk]</field>
+            <field>[federated.0cpfhw00ko63ws1g2njpg11619nl].[none:shipping_mode:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3EA2FE3E-1621-4DF1-9CE8-5F55FBCCE93E}' />
+    </window>
+    <window class='worksheet' name='Late Delivery Rate by Market and Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0t2ihku16x7vpt1d4hx9v10anolt].[usr:Calculation_0682565410324481:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0t2ihku16x7vpt1d4hx9v10anolt].[none:market:nk]</field>
+            <field>[federated.0t2ihku16x7vpt1d4hx9v10anolt].[none:order_region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A088FC62-D807-4C93-BE68-F6E66C974582}' />
+    </window>
+    <window class='worksheet' name='Shipping Mode: Promised vs Actual Delivery Days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15bbtsk01xp60z182pf7k09e4mea].[none:Calculation_0682565411614722:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15bbtsk01xp60z182pf7k09e4mea].[none:Calculation_0682565411614722:nk]</field>
+            <field>[federated.15bbtsk01xp60z182pf7k09e4mea].[none:shipping_mode:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1AA53D8C-8372-4BAF-8909-1AC22BC87F47}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Late Delivery % by Shipping Mode' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Late Delivery Rate by Market and Region' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACwklEQVR4nO3csWoUYRiG0V+zghCEWGgaFYRYWliK2HuB9l6AthZpBFutbL0FRSREzZod
+      xjZbxoEs4Tmnm+blax6YaebGPM/zgKibuz4AdkkApK0uPmw2mzFN065ugUs5/XM+jj99XbSx
+      FcA0TWO9Xi8ahKvy/eev8eb950UbXoFIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQB
+      kCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBp
+      AiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgLTVxYeT
+      3+vx7cfJrm6BSzk9O1+8sRXAuw9fxuu3HxePwlV4+exo8YZXINIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYC01a4PgP91a29vPDo8WLQh
+      AK6tO/u3x6sXTxZtCIBra57ncfZ3s2jDNwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpW3+Ge3h4MJ4/fbyrW+BSjh7c
+      G/fv7i/a+AecRTFBTh/jCwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Shipping Mode: Promised vs Actual Delivery Days' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
